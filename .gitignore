@@ -1,0 +1,27 @@
+# Security-sensitive files
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+.env
+.env.*
+id_rsa*
+id_ed25519*
+id_ecdsa*
+*.gpg
+*.asc
+credentials*
+secrets*
+token*
+password*
+
+# Editor backups
+*~
+*.swp
+*.swo
+*.bak
+
+# OS files
+.DS_Store
+Thumbs.db

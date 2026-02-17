@@ -1,0 +1,9 @@
+# Required by elfutils[debuginfod] -> gdb -> drkonqi-legacy -> plasma-meta
+>=dev-libs/json-c-0.18 abi_x86_32
+>=net-misc/curl-8.17.0-r1 abi_x86_32
+>=net-dns/c-ares-1.34.6 abi_x86_32
+>=net-libs/nghttp2-1.68.0 abi_x86_32
+>=net-libs/nghttp3-1.9.0 abi_x86_32
+>=net-libs/libpsl-0.21.5 abi_x86_32
+>=dev-libs/libunistring-1.3 abi_x86_32
+>=net-dns/libidn2-2.3.8 abi_x86_32

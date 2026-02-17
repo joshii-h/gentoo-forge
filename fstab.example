@@ -1,0 +1,24 @@
+# /etc/fstab - Gentoo Linux (btrfs + NVMe + SATA)
+# Adjust UUIDs to match your system (blkid to find them)
+
+# EFI System Partition
+UUID=<UUID-efi>                            /efi          vfat    dmask=0022,fmask=0133,noatime                   0      2
+
+# Swap
+UUID=<UUID-swap>                           none          swap    sw                                              0      0
+
+# Root (btrfs subvolume @)
+UUID=<UUID-btrfs>                          /             btrfs   subvol=@,compress=zstd,noatime,discard=async                  0      0
+
+# Home (btrfs subvolume @home)
+UUID=<UUID-btrfs>                          /home         btrfs   subvol=@home,compress=zstd,noatime,discard=async              0      0
+
+# Snapshots (btrfs subvolume @snapshots)
+UUID=<UUID-btrfs>                          /.snapshots   btrfs   subvol=@snapshots,compress=zstd,noatime,discard=async         0      0
+
+# Additional drives (adjust mount points and UUIDs as needed)
+# UUID=<UUID-drive1>                       /mnt/drive1   ntfs3   rw,noatime,uid=1000,gid=1000                    0      0
+# UUID=<UUID-drive2>                       /mnt/drive2   btrfs   compress=zstd,noatime                           0      0
+
+# Portage tmpfs (RAM-Disk for faster compiling - adjust size to your RAM)
+tmpfs                                      /var/tmp/portage  tmpfs  size=16G,uid=portage,gid=portage,mode=775,nosuid,noatime,nodev  0  0

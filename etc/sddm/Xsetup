@@ -1,0 +1,3 @@
+#!/bin/sh
+# Set Swiss German keyboard layout for SDDM login screen
+setxkbmap ch de

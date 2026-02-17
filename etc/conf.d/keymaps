@@ -1,0 +1,5 @@
+keymap="sg-latin1"
+windowkeys="YES"
+extended_keymaps="backspace keypad"
+dumpkeys_charset=""
+fix_euro="NO"
