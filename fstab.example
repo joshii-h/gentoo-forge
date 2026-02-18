@@ -21,4 +21,4 @@ UUID=<UUID-btrfs>                          /.snapshots   btrfs   subvol=@snapsho
 # UUID=<UUID-drive2>                       /mnt/drive2   btrfs   compress=zstd,noatime                           0      0
 
 # Portage tmpfs (RAM-Disk for faster compiling - adjust size to your RAM)
-tmpfs                                      /var/tmp/portage  tmpfs  size=16G,uid=portage,gid=portage,mode=775,nosuid,noatime,nodev  0  0
+tmpfs                                      /var/tmp/portage  tmpfs  size=24G,uid=portage,gid=portage,mode=775,nosuid,noatime,nodev  0  0
