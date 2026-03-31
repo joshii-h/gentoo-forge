@@ -1,0 +1,5 @@
+net-im/nheko ~amd64
+dev-cpp/blurhash ~amd64
+dev-libs/mtxclient ~amd64
+dev-cpp/coeurl ~amd64
+dev-db/lmdb++ ~amd64
